@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Fundação Getulio Vargas — Certificado</title>
+
+  <style>
+    body {
+      background-color: #f5f8ff;
+      font-family: "Times New Roman", serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .certificado {
+      background: white;
+      border: 10px solid #ccc;
+      width: 80%;
+      max-width: 900px;
+      padding: 40px;
+      margin-top: 40px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .header img {
+      height: 60px;
+    }
+
+    .titulo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #003366;
+      margin-bottom: 10px;
+    }
+
+    .texto {
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: justify;
+      margin: 0 auto;
+      width: 90%;
+    }
+
+    .assinaturas {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+
+    .assinaturas div {
+      text-align: center;
+      border-top: 1px solid #000;
+      width: 30%;
+      padding-top: 5px;
+    }
+
+    .rodape {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #555;
+      text-align: left;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Histórico */
+    table {
+      width: 90%;
+      border-collapse: collapse;
+      margin-top: 50px;
+      font-size: 14px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    th,
+    td {
+      border: 1px solid #999;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e9efff;
+    }
+
+    caption {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* Selo digital */
+    .selo {
+      position: absolute;
+      bottom: 30px;
+      right: 40px;
+      background: radial-gradient(circle, #004aad 40%, #002f73 100%);
+      color: white;
+      font-size: 12px;
+      text-align: center;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .selo span:first-child {
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+    .selo span:last-child {
+      font-size: 10px;
+    }
+
+    /* Botão PDF */
+    .btn-pdf {
+      margin: 30px 0;
+      padding: 10px 20px;
+      background-color: #004aad;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .btn-pdf:hover {
+      background-color: #002f73;
+    }
+  </style>
+</head>
+
+<body>
+
+  <button class="btn-pdf" onclick="baixarPDF()">📄 Baixar Certificado em PDF</button>
+
+  <div class="certificado" id="certificado">
+    <div class="header">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/FGV_logo.png" alt="Logo FGV">
+      <h2>FUNDAÇÃO GETULIO VARGAS</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/UNICAP_logo.png/200px-UNICAP_logo.png"
+        alt="Logo UNICAP">
+    </div>
+
+    <h3 class="titulo">CERTIFICADO</h3>
+
+    <p class="texto">
+      O Diretor da Escola de Pós-Graduação em Economia da Fundação Getulio Vargas, em parceria com a Universidade
+      Católica de Pernambuco (UNICAP),
+      confere a <strong>Gianni Carla Malaquias</strong> este certificado, referente ao
+      <strong>Curso de Pós-Graduação Lato Sensu MBA em Gestão Estratégica de Recursos Humanos</strong>, nível
+      Especialização,
+      com carga horária de 360 horas-aula, realizado em São José dos Campos – SP.
+    </p>
+
+    <p class="texto" style="margin-top:20px;">
+      Rio de Janeiro, 10 de novembro de 2025.
+    </p>
+
+    <div class="assinaturas">
+      <div>Clóvis de Faro<br>Diretor da EPGE/FGV</div>
+      <div>Pe. Theodoro Paulo Severino Peters SJ<br>Reitor da UNICAP</div>
+      <div>Bianor Scelza Cavalcanti<br>Diretor da EBAPE/FGV</div>
+    </div>
+
+    <div class="rodape">
+      <p><strong>Nome completo:</strong> Gianni Carla Malaquias</p>
+      <p><strong>Data de nascimento:</strong> 04/05/1978</p>
+      <p><strong>CPF:</strong> 273.398.538-80</p>
+      <p><strong>RG:</strong> 28.454.651-3</p>
+      <p><strong>Cidade/Estado de nascimento:</strong> São José dos Campos – SP</p>
+    </div>
+
+    <table>
+      <caption>HISTÓRICO ESCOLAR</caption>
+      <tr>
+        <th>Disciplina</th>
+        <th>Professor</th>
+        <th>Carga Horária</th>
+        <th>Conceito</th>
+      </tr>
+      <tr>
+        <td>Gestão de Pessoas e Competências</td>
+        <td>Prof. Luiz Fernando Souza</td>
+        <td>24h</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>Planejamento Estratégico</td>
+        <td>Profa. Maria Aparecida Lima</td>
+        <td>24h</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>Legislação Trabalhista e Previdenciária</td>
+        <td>Prof. Ricardo Mendes</td>
+        <td>24h</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>Psicologia Organizacional</td>
+        <td>Profa. Ana Beatriz Costa</td>
+        <td>24h</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <td>Gestão de Carreiras e Treinamento</td>
+        <td>Prof. Marcos Henrique</td>
+        <td>24h</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>Finanças e Orçamento Empresarial</td>
+        <td>Prof. João Carlos Almeida</td>
+        <td>24h</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <td>Projeto Final - Práticas de RH</td>
+        <td>Profa. Carla Menezes</td>
+        <td>24h</td>
+        <td>A</td>
+      </tr>
+    </table>
+
+    <div class="selo">
+      <span>SELO DIGITAL</span>
+      <span>Autenticidade Verificada</span>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script>
+    function baixarPDF() {
+      const elemento = document.getElementById('certificado');
+      const opt = {
+        margin: 0.2,
+        filename: 'Certificado_Gianni_Carla_Malaquias.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+      };
+      html2pdf().set(opt).from(elemento).save();
+    }
+  </script>
+
+</body>
+  </html>
